@@ -14,6 +14,9 @@ public class StudyGroupService {
     }
 
     public StudyGroup studyGroupCreator(Teacher teacher, List<Student> studentList) {
+        // я примерно 5 часов потратил на то, чтобы придумать как сохранять возвращаемую Учебную группу в поле)
+        // случайно попробовал такую конструкцию, до этого просто было return new StudyGroup(teacher, studentList);
+        // не знал, что так можно, но был дико рад, когда получилось вывести на печать.
         return this.studyGroup = new StudyGroup(teacher, studentList);
     }
 
